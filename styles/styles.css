@@ -1,0 +1,38 @@
+html {
+  font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high */
+  font-family: "PT Serif"; /* this should be the rest of the output you got from Google Fonts */
+  background-color: rgb(247, 213, 200);
+}
+h1 {
+  font-family: "Robato Mono";
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+  padding: 15px 15px;
+  color: #000000;
+  text-shadow: 2.5px 2.5px 3px rgb(243, 222, 222);
+}
+
+p,
+li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+a:hover {
+  color: #c76363;
+  background-color: rgb(247, 213, 200);
+}
+body {
+  width: 650px;
+  margin: 0 auto;
+  background-color: #ec9d9d;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  shad
+}
