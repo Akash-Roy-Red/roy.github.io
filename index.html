@@ -1,47 +1,164 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>My test page</title>
-    <link href="styles/styles.css" rel="stylesheet" />
+    <meta
+      name="description"
+      content="Akreeva Design Company - Architectural planning, Building Plan, 3D visualization, and landscape design by Akreeva Design Co."
+    />
+    <meta
+      name="keywords"
+      content="Architecture, 3D Visualizations, Landscape Design, Akreeva, Akash Roy, Architect India, Landscape Architect"
+    />
+    <meta name="author" content="Akash Roy" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArqeevaDesigns</title>
     <link
-  href="https://fonts.googleapis.com/css?family=Open+Sans"
-  rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono&display=swap" rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <h1>The below image is the Firefox logo</h1>
-    <img
-      src="images/firefox-icon.png"
-      alt="The Firefox logo: a flaming fox surrounding the Earth."
-    />
-    <p>The following information is found for the image above:</p>
+    <header>
+      <h1>Arqeeva Designs</h1>
+    </header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#about-me">About</a></li>
+        <li><a href="#Services">Services</a></li>
+        <li><a href="#recent-work">Recent Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button id="dark-mode-toggle">
+            <img
+              src="images/dm.png"
+              alt="dark mode"
+              width="30px"
+              height="30px"
+            />
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section id="about-me" data-aos="zoom-in">
+        <p>
+          Welcome! I’m Roy, an experienced architect and planner dedicated to
+          transforming spaces with precision, creativity, and a deep
+          understanding of design principles. With a passion for both aesthetics
+          and functionality, I specialize in creating architectural plans, 3D
+          visualizations, and detailed landscape designs that breathe life into
+          every project.
+        </p>
+        <p>
+          Whether you're looking to develop your dream home, enhance your
+          business space, or create a stunning outdoor environment, I offer
+          tailored solutions that bring your vision to reality. My approach
+          combines innovative design techniques with a focus on sustainability,
+          ensuring that each project is both beautiful and practical.
+        </p>
+        <a
+          href="https://www.youtube.com/watch?v=XgPgDaS5nTc&ab_channel=AkashRoy"
+          >This is my first 3D Visualization Project</a
+        >
+      </section>
+      <section id="Services" data-aos="zoom-in">
+        <h2>Our Services</h2>
+        <div class="services-container">
+          <div class="card-front">
+            <img src="images/site-plan-nauri.jpg" alt="Architectural Plan" />
+            <h3>Architectural Plans</h3>
+            <p>
+              Detailed architectural blueprints for residential & commercial
+              projects.
+            </p>
+          </div>
+          <div class="card-front">
+            <video width="100%" height="180" autoplay muted loop playsinline>
+              <source src="videos/3d-compressed.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <h3>3D Walkthroughs/ Visualizations</h3>
+            <p>
+              Immersive 3D models and video walkthroughs to bring designs to
+              life.
+            </p>
+          </div>
+          <div class="card-front">
+            <img src="images/e_1.jpg" alt="Landscape Design" />
+            <h3>Landscape Design</h3>
+            <p>
+              Modern, sustainable outdoor planning with greenery, water &
+              hardscape features.
+            </p>
+          </div>
+        </div>
+        <p>
+          To get more information about the services offered please click show
+          more
+        </p>
+        <div id="moreContent" style="display: none">
+          <img
+            src="images/Landscape.jpg"
+            width="500px"
+            alt="Image failed to load"
+          />
+        </div>
+        <button id="showMoreBtn">Show More</button>
+        <a href="#contact" class="cta-button">Get in Touch</a>
+      </section>
+      <section id="recent-work" data-aos="zoom-in">
+        <h3>Our Recent Work</h3>
+        <img src="images/site_plan.jpg" alt="Recent Site Plan" width="500" />
+      </section>
+      <section id="contact" data-aos="zoom-in">
+        <h2>Let's Work Together</h2>
+        <form
+          action="https://formsubmit.co/royakash975@gmail.com"
+          method="POST"
+        >
+          <label for="name">Name</label><br />
+          <input type="text" id="name" name="name" required /><br /><br />
 
-    <ol>
-      <li>
-        The Firefox logo depicts an orange fox partially surrounding and
-        overlooking a globe.
-      </li>
-      <li>
-        While the initial design of the logo depicted a phoenix, it was changed
-        to depict a fox after the name of the web browser was changed from
-        Phoenix to Firefox.
-      </li>
-    </ol></p>
-    <p>Apart from these, there are many more facts about Firefox</p>
-    <p id="id1">
-      Read the
-      <a href="https://www.mozilla.org/en-US/about/manifesto/"
-        >Mozilla Manifesto</a
-      >
-      to learn more about the wonderful browser application
-    </p>
-    <p>
-      You can use the <a href="https://akash-roy-red.github.io/office-time-tracker/">Office Time Tracker app</a> 
-      to monitor your weekly office hours and track your progress effortlessly. 
-    </p>
-    <button>Change user</button>
-    <script src="scripts/main.js"></script>
+          <label for="email">Email</label><br />
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="message">Message</label><br />
+          <textarea id="message" name="message" rows="5" required></textarea
+          ><br /><br />
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Please Contact us at:
+        <a href="mailto:royakash975@gmail.com">royakash975@gmail.com</a>
+      </p>
+    </footer>
+    <script>
+      // Smooth scroll behavior
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth" });
+          }
+        });
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
